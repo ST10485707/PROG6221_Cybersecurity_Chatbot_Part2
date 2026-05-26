@@ -7,6 +7,9 @@ namespace PROG6221_Cybersecurity_Chatbot_Part2
 {
     public partial class MainWindow : Window
     {
+        private ChatbotLogic chatbot = new ChatbotLogic();
+        private string userName = "";
+
         public MainWindow()
         {
             InitializeComponent();
@@ -17,7 +20,7 @@ namespace PROG6221_Cybersecurity_Chatbot_Part2
         {
             AddToChat("Bot", "Hello! Welcome to the Cybersecurity Awareness Bot!", "Green");
             AddToChat("Bot", "I'm here to help you stay safe online.", "Green");
-            AddToChat("Bot", "Please enter your name to begin.", "Green");
+            AddToChat("Bot", "What is your name?", "Green");
         }
 
         private void AddToChat(string sender, string message, string color)
@@ -30,7 +33,6 @@ namespace PROG6221_Cybersecurity_Chatbot_Part2
                 Foreground = GetBrush(color)
             });
 
-            // Auto-scroll to bottom
             ChatDisplay.ScrollIntoView(ChatDisplay.Items[ChatDisplay.Items.Count - 1]);
         }
 
@@ -73,8 +75,30 @@ namespace PROG6221_Cybersecurity_Chatbot_Part2
 
             AddToChat("You", userMessage, "Magenta");
 
-            // For now, just echo back - we'll add real responses later
-            AddToChat("Bot", $"You said: {userMessage}", "Green");
+            // If we don't have user's name yet
+            if (string.IsNullOrEmpty(userName))
+            {
+                userName = userMessage;
+                AddToChat("Bot", $"Nice to meet you, {userName}! 😊", "Green");
+                AddToChat("Bot", "You can ask me about passwords, scams, privacy, phishing, or safe browsing.", "Green");
+                AddToChat("Bot", "Type 'exit' to quit.", "Green");
+                UserInput.Clear();
+                UserInput.Focus();
+                return;
+            }
+
+            // Check if user wants to exit
+            if (userMessage.ToLower() == "exit")
+            {
+                AddToChat("Bot", $"Goodbye, {userName}! Stay safe online! 😊", "Green");
+                UserInput.IsEnabled = false;
+                SendButton.IsEnabled = false;
+                return;
+            }
+
+            // Get response from ChatbotLogic
+            string response = chatbot.GetBotResponse(userMessage);
+            AddToChat("Bot", response, "Green");
 
             UserInput.Clear();
             UserInput.Focus();
