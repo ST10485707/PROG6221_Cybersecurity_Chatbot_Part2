@@ -9,31 +9,31 @@ namespace PROG6221_Cybersecurity_Chatbot_Part2
 
         // Lists of random responses for different topics
         private string[] scamResponses = {
-            "🚨 Scam alert! Never share your OTP or PIN with anyone. Banks will never ask for this.",
-            "📞 Watch for fake calls! Scammers pretend to be from 'your bank'. Hang up and call the official number.",
-            "📧 Email scams often have spelling mistakes. Check the sender's email address carefully!",
-            "💰 'You won a prize!' is almost always a scam. Never pay money to receive 'winnings'."
+            " Scam alert! Never share your OTP or PIN with anyone. Banks will never ask for this.",
+            " Watch for fake calls! Scammers pretend to be from 'your bank'. Hang up and call the official number.",
+            " Email scams often have spelling mistakes. Check the sender's email address carefully!",
+            " 'You won a prize!' is almost always a scam. Never pay money to receive 'winnings'."
         };
 
         private string[] privacyResponses = {
-            "🔒 Review your privacy settings on social media at least once a month.",
-            "🌐 Use private browsing (Incognito) when searching sensitive topics.",
-            "📱 Check which apps have access to your location, camera, and microphone.",
-            "🛡️ Two-factor authentication (2FA) adds an extra layer of privacy protection."
+            " Review your privacy settings on social media at least once a month.",
+            " Use private browsing (Incognito) when searching sensitive topics.",
+            " Check which apps have access to your location, camera, and microphone.",
+            " Two-factor authentication (2FA) adds an extra layer of privacy protection."
         };
 
         private string[] passwordResponses = {
-            "🔐 Use at least 12 characters with uppercase, lowercase, numbers, and symbols.",
-            "⚠️ Never reuse passwords across different accounts. Use a password manager!",
-            "📅 Change important passwords every 3-6 months.",
+            " Use at least 12 characters with uppercase, lowercase, numbers, and symbols.",
+            " Never reuse passwords across different accounts. Use a password manager!",
+            " Change important passwords every 3-6 months.",
             "🚫 Avoid using personal info like your name, birthday, or 'password123'."
         };
 
         private string[] phishingResponses = {
-            "🎣 Phishing emails often create urgency: 'Your account will be closed!'",
-            "✉️ Hover over links before clicking to see the real destination.",
-            "🛑 Never download attachments from unknown senders.",
-            "✅ Legitimate companies address you by name, not 'Dear Customer'."
+            " Phishing emails often create urgency: 'Your account will be closed!'",
+            " Hover over links before clicking to see the real destination.",
+            " Never download attachments from unknown senders.",
+            " Legitimate companies address you by name, not 'Dear Customer'."
         };
 
         private string[] browsingResponses = {
