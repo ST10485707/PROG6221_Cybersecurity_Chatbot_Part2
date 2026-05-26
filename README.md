@@ -77,7 +77,9 @@ Bot: Goodbye, Mila! Stay safe online! 😊
 ## Screenshots
 
 ### Chatbot Main Window
-![Chatbot GUI](screenshot.png)
+![Chatbot GUI] 
+<img width="1907" height="1008" alt="image" src="https://github.com/user-attachments/assets/cccbd191-8bfb-47c3-adfe-c018e62706b8" />
+
 
 ### CI Workflow Passing
 ![CI Workflow](ci-workflow.png)
