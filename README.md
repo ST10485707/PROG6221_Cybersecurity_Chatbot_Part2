@@ -82,7 +82,9 @@ Bot: Goodbye, Mila! Stay safe online! 😊
 
 
 ### CI Workflow Passing
-![CI Workflow](ci-workflow.png)
+![CI Workflow] 
+<img width="1887" height="921" alt="image" src="https://github.com/user-attachments/assets/7998d99e-7816-40d7-b200-ab0680561efd" />
+
 
 ---
 
