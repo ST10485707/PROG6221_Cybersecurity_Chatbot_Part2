@@ -136,7 +136,7 @@ This handles the GUI:
 
 ## Video Presentation
 
-[YouTube Link - Part 2 Demonstration](https://youtu.be/YOUR_VIDEO_LINK_HERE)
+[YouTube Link - Part 2 Demonstration](https://youtu.be/8TrVcbjqWsE)
 
 ---
 
