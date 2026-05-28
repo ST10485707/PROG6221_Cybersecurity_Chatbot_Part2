@@ -149,7 +149,7 @@ This handles the GUI:
 
 ## Declaration
 
-I confirm that this is my own original work and my own voice is used in the video presentation (no AI voice).
+I confirm that this is my own original work and my own voice is used in the video presentation.
 
 **Signature:** Mila Mpengesi  
 **Date:** 26 May 2026
